@@ -1,5 +1,6 @@
 package com.example.vki.test2;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,7 +24,8 @@ public class ThirdActivity extends AppCompatActivity {
         successButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                message.setText("Great! We have done your reservation.\n See you there.");
+                message.setText("Great! We have done your reservation.\n See you there...!");
+                message.setTextColor(Color.GREEN);
             }
         });
 
@@ -31,6 +33,7 @@ public class ThirdActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 message.setText("Ooops ! Something has gone wrong. We will contact you soon");
+                message.setTextColor(Color.RED);
             }
         });
     }
