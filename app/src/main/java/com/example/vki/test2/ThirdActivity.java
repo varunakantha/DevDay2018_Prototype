@@ -20,6 +20,7 @@ public class ThirdActivity extends AppCompatActivity {
         successButton = findViewById(R.id.btn_success);
         failButton = findViewById(R.id.btn_Fail);
         message = findViewById(R.id.tv_msg2);
+        this.getSupportActionBar().setTitle("DEV DAY-2018");
 
         successButton.setOnClickListener(new View.OnClickListener() {
             @Override
