@@ -85,6 +85,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (id == R.id.action_login) {
+            DialogMsgFragment recoveryDialog = new DialogMsgFragment();
+            recoveryDialog.show(getSupportFragmentManager(),"RecoveryDialog");
             return true;
         }
 
