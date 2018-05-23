@@ -25,7 +25,7 @@ public class ThirdActivity extends AppCompatActivity {
         successButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                message.setText("Great! We have done your reservation.\n See you there...!");
+                message.setText("Great! We have done your reservation.\nThis is your ID: DVD18-0001 \nSee you there...!");
                 message.setTextColor(Color.GREEN);
             }
         });
@@ -37,5 +37,10 @@ public class ThirdActivity extends AppCompatActivity {
                 message.setTextColor(Color.RED);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+
     }
 }
