@@ -1,5 +1,6 @@
 package com.example.vki.test2;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ public class ThirdActivity extends AppCompatActivity {
 
     Button successButton;
     Button failButton;
+    Button nextButton;
     TextView message;
     ImageView qrCodeImaView;
 
@@ -25,6 +27,7 @@ public class ThirdActivity extends AppCompatActivity {
         qrCodeImaView = findViewById(R.id.img_view1);
         this.getSupportActionBar().setTitle("DEV DAY-2018");
         qrCodeImaView.setVisibility(View.INVISIBLE);
+        nextButton = findViewById(R.id.btn_next);
 
         successButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,7 +42,16 @@ public class ThirdActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 message.setText("Ooops ! Something has gone wrong. We will contact you soon");
+                qrCodeImaView.setVisibility(View.INVISIBLE);
                 message.setTextColor(Color.RED);
+            }
+        });
+
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goToFourthActivity = new Intent(getApplicationContext(),FourthActivity.class);
+                startActivity(goToFourthActivity);
             }
         });
     }
