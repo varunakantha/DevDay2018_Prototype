@@ -93,7 +93,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Note : We have sent your Recovery-Code to the given email \n so that you can recover your account in any emergency situation."
+        android:text="Note : We have sent your Security-Code to the given email \n so that you can re-login to this app in any emergency situation."
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
