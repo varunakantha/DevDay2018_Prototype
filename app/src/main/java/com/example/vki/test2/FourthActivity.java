@@ -13,8 +13,8 @@ public class FourthActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.getSupportActionBar().setTitle("DEV DAY-2018");
         setContentView(R.layout.activity_fourth);
+        this.getSupportActionBar().setTitle("DEV DAY-2018");
         sessionInfo = findViewById(R.id.imgv_sessioninfo);
 
         sessionInfo.setOnClickListener(new View.OnClickListener() {

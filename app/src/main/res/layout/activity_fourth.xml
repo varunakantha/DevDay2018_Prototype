@@ -40,58 +40,58 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Session Info"
+                    android:text="Tracks"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary" />
-
-                <ImageView
-                    android:id="@+id/imgv_sessioninfo"
-                    android:layout_width="113dp"
-                    android:layout_height="106dp"
-                    app:srcCompat="@mipmap/speakerinfo"
-                    tools:layout_editor_absoluteX="175dp"
-                    tools:layout_editor_absoluteY="238dp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Speaker's Info"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorPrimary" />
-
-                <ImageView
-                    android:id="@+id/imgv_speakerview"
-                    android:layout_width="113dp"
-                    android:layout_height="107dp"
-                    app:srcCompat="@mipmap/scessioninfo"
-                    tools:layout_editor_absoluteX="175dp"
-                    tools:layout_editor_absoluteY="238dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:textColor="@color/colorPrimary"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Tracks n Sessions "
-                    android:textAlignment="center" />
 
                 <ImageView
                     android:id="@+id/imgv_tracks"
                     android:layout_width="113dp"
                     android:layout_height="106dp"
                     app:srcCompat="@mipmap/tracks_and_sessions"
+                    tools:layout_editor_absoluteX="175dp"
+                    tools:layout_editor_absoluteY="238dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sessions"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/imgv_sessioninfo"
+                    android:layout_width="113dp"
+                    android:layout_height="107dp"
+                    app:srcCompat="@mipmap/speakerinfo"
+                    tools:layout_editor_absoluteX="175dp"
+                    tools:layout_editor_absoluteY="238dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Speakers"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/imgv_speakerview"
+                    android:layout_width="113dp"
+                    android:layout_height="106dp"
+                    app:srcCompat="@mipmap/scessioninfo"
                     tools:layout_editor_absoluteX="175dp"
                     tools:layout_editor_absoluteY="238dp" />
             </LinearLayout>
@@ -132,7 +132,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ask Quiz"
+                    android:text="Quiz"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary" />
 
