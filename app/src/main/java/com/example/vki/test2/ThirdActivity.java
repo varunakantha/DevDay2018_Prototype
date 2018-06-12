@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -25,6 +26,7 @@ public class ThirdActivity extends AppCompatActivity {
         message = findViewById(R.id.tv_msg2);
         qrCodeImaView = findViewById(R.id.img_view1);
         this.getSupportActionBar().setTitle("DEV DAY-2018");
+        qrCodeImaView.startAnimation(AnimationUtils.loadAnimation(this, R.anim.linear_interpolator));
 
         successButton.setOnClickListener(new View.OnClickListener() {
             @Override

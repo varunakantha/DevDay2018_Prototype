@@ -18,6 +18,7 @@
         android:layout_marginTop="8dp"
         android:text="Thank you.\n Your payment is being validated. \n We will update you soon."
         android:textAlignment="center"
+        android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,6 +61,7 @@
 
     <ImageView
         android:id="@+id/img_view1"
+        android:interpolator="@anim/linear_interpolator"
         android:layout_width="279dp"
         android:layout_height="229dp"
         android:layout_marginBottom="8dp"

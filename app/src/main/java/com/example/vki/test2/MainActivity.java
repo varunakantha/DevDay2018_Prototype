@@ -54,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
                         try {
                             Thread.sleep(2000);
-                            Intent goToSecondActivity = new Intent(getApplicationContext(),SecondActivity.class);
-                            startActivity(goToSecondActivity);
+                            Intent goToFourthdActivity = new Intent(getApplicationContext(),FourthActivity.class);
+                            startActivity(goToFourthdActivity);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
