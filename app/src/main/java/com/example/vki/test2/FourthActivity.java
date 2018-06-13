@@ -16,6 +16,7 @@ public class FourthActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fourth);
         this.getSupportActionBar().setTitle("DEV DAY-2018");
         sessionInfo = findViewById(R.id.imgv_sessioninfo);
+        //sessionInfo.setImageResource(R.mipmap.payments); //<- change images dynamically
 
         sessionInfo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -23,5 +24,10 @@ public class FourthActivity extends AppCompatActivity {
                 Toast.makeText(FourthActivity.this, "Elaaa", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        //Do nothing
     }
 }
