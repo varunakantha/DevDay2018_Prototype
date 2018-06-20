@@ -18,6 +18,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     Spinner tshirtSizeSpinner;
+    Spinner userTypeSpinner;
     Button registerButton;
     ProgressBar registrationProBar;
     @Override
@@ -28,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setTitle("DEV DAY - 2018");
         setSupportActionBar(toolbar);
 
-        tshirtSizeSpinner = findViewById(R.id.spinner);
+        tshirtSizeSpinner = findViewById(R.id.spinner_tshirtsize);
+        userTypeSpinner = findViewById(R.id.spinner_usertype);
         registrationProBar = findViewById(R.id.reg_progressBar);
         registrationProBar.setVisibility(View.INVISIBLE);
 
@@ -40,8 +42,18 @@ public class MainActivity extends AppCompatActivity {
         tShirtSizes.add("XL");
         tShirtSizes.add("XXL");
 
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tShirtSizes);
-        tshirtSizeSpinner.setAdapter(dataAdapter);
+        List<String> usertypes = new ArrayList<>();
+        usertypes.add("Delegate");
+        usertypes.add("Speaker");
+        usertypes.add("Invitee");
+
+
+        ArrayAdapter<String> tshirtSizeDataAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tShirtSizes);
+        tshirtSizeSpinner.setAdapter(tshirtSizeDataAdapter);
+
+        ArrayAdapter<String>userTypeDataAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, usertypes);
+        userTypeSpinner.setAdapter(userTypeDataAdapter);
+
 
         registerButton = findViewById(R.id.btn_register);
         registerButton.setOnClickListener(new View.OnClickListener() {
